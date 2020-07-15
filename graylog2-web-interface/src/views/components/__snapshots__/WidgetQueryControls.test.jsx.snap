@@ -21,7 +21,7 @@ exports[`WidgetQueryControls should do something 1`] = `
             <button
               aria-expanded="false"
               aria-haspopup="true"
-              class="DropdownButton__StyledDropdownButton-sc-1343dcx-0 iEHPAt TimeRangeDropdownButton__StyledDropdownButton-sc-1rmks06-0 cVrRCV dropdown-toggle btn btn-info"
+              class="DropdownButton__StyledDropdownButton-sc-1343dcx-0 THBsK TimeRangeDropdownButton__StyledDropdownButton-sc-1rmks06-0 cVrRCV dropdown-toggle btn btn-info"
               id="timerange-type"
               role="button"
               type="button"
