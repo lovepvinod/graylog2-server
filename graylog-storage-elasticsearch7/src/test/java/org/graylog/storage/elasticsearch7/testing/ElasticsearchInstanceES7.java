@@ -3,6 +3,7 @@ package org.graylog.storage.elasticsearch7.testing;
 import com.github.joschi.jadconfig.util.Duration;
 import com.github.zafarkhaja.semver.Version;
 import com.google.common.collect.ImmutableList;
+import org.graylog.shaded.elasticsearch7.org.apache.http.impl.client.BasicCredentialsProvider;
 import org.graylog.storage.elasticsearch7.ElasticsearchClient;
 import org.graylog.storage.elasticsearch7.RestHighLevelClientProvider;
 import org.graylog.testing.elasticsearch.Client;
@@ -47,7 +48,8 @@ public class ElasticsearchInstanceES7 extends ElasticsearchInstance {
                 null,
                 Duration.seconds(60),
                 "http",
-                false);
+                false,
+                new BasicCredentialsProvider());
 
         return new ElasticsearchClient(clientProvider.get());
     }
